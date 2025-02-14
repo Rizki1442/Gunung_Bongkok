@@ -1,6 +1,7 @@
 html,
 body {
     background-color: white;
+    min-height: 100vh;
 }
 
 .navbar {
@@ -33,4 +34,12 @@ body {
 
 .about1 {
     color: #a6cdc6;
+}
+
+.news {
+    font-size: 3rem;
+}
+
+.news2{
+    font-size: 2rem;
 }
