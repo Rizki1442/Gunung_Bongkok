@@ -45,6 +45,8 @@
           <li><a href="{{ url_for('panduan_dasar') }}">Panduan Dasar</a></li>
           <li><a href="{{ url_for('lokasi') }}">Lokasi</a></li>
           <li><a href="{{ url_for('galery') }}">Galery</a></li>
+          <li><a href="{{ url_for('home') }}#news">News</a></li>
+          <li><a href="{{ url_for('erd') }}">Erd</a></li>
         </ul>
       </div>
     </div>
@@ -101,6 +103,42 @@
   </div>
   </a>
   
+  <!-- Garis Pemisah -->
+<hr class="container mx-auto my-2 border-gray-400 border-4" />
+
+ <!-- 3 Foto dengan Card dan Teks Penuh -->
+ <!--Berita Terbaru-->
+<div class="container mx-auto mt-5 px-5" id="news">
+  <h2 class="text-2xl font-bold text-black mb-4">Berita Pilihan</h2>
+
+  
+  <div class="bg-gray-100 p-4 rounded-lg shadow-md mb-4 flex items-center space-x-4" data-aos="fade-up">
+      <img src="https://asset-2.tstatic.net/jabar/foto/bank/images/kebakaran-gunung-bongkok.jpg" alt="Rektor ITM Raih Gelar Doktor" class="w-24 aspect-square object-cover rounded-lg" />
+      <div>
+          <h3 class="text-xl font-semibold text-black">Kebakaran, monyet jadi pemicu</h3>
+          <p class="text-gray-700 mt-1 line-clamp-2">Kebakaran melanda kawasan Gunung Bongkok di Desa Sukamulya, Kecamatan Tegalwaru, Kabupaten Purwakarta, Jawa Barat pada Selasa (22/8/2023) sekitar pukul 12.30 WIB.</p>
+          <a href="https://jabar.tribunnews.com/2023/08/22/kebakaran-gunung-bongkok-terjadi-karena-monyet-curi-ayam-bakar-milik-pendaki-bara-api-ikut-terbawa" class="text-blue-600 font-semibold mt-2 inline-block hover:underline">Baca selengkapnya</a>
+      </div>
+  </div>
+  
+  <div class="bg-gray-100 p-4 rounded-lg shadow-md mb-4 flex items-center space-x-4" data-aos="fade-up">
+      <img src="https://asset.kompas.com/crops/sR9f-qA9Dex7Gl3Wz4nJLKhqAAM=/113x0:958x563/1200x800/data/photo/2023/06/30/649e60ba08ed5.jpg" alt="ITM Gelar ITM Sport Cup 2023" class="w-24 aspect-square object-cover rounded-lg" />
+      <div>
+          <h3 class="text-xl font-semibold text-black">Api Kebakaran Masih Menyala di Beberapa Titik</h3>
+          <p class="text-gray-700 mt-1 line-clamp-2">Api masih menyala di sejumlah titik Gunung Bongkok, Desa Sukamulaya, Kecamatan Tegalwaru, Kabupaten Purwakarta, Jawa Barat pada Rabu (23/8/2023) siang.</p>
+          <a href="https://m.kaskus.co.id/post/64e688fd2031fb5c090294dd" class="text-blue-600 font-semibold mt-2 inline-block hover:underline">Baca selengkapnya</a>
+      </div>
+  </div>
+  
+  <div class="bg-gray-100 p-4 rounded-lg shadow-md mb-4 flex items-center space-x-4" data-aos="fade-up">
+      <img src="https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/593/2025/01/04/gunung_bongkok-2557348126.jpg" alt="Seminar Nasional di ITM Bahas Pendidikan di Era Digital" class="w-24 aspect-square object-cover rounded-lg" />
+      <div>
+          <h3 class="text-xl font-semibold text-black">Destinasi pendakian</h3>
+          <p class="text-gray-700 mt-1 line-clamp-2"> Gunung Bongkok merupakan salah satu destinasi pendakian di Kabupaten Purwakarta yang cocok untuk pemula.</p>
+          <a href="https://www.kabaralam.com/wisata-alam/59314274834/gunung-bongkok-purwakarta-destinasi-pendakian-yang-punya-jembatan-pandang-dan-flying-fox-terpanjang-di-jawa-barat" class="text-blue-600 font-semibold mt-2 inline-block hover:underline">Baca selengkapnya</a>
+      </div>
+  </div>
+</div>
 
 <!--footer-->
 <footer class="footer footer-center p-3">
@@ -124,4 +162,5 @@
 </body>
 
 </html>
+
 
