@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{% block title %}Home - Gunung Bongkok{% endblock %}</title>
 
+  <link rel="icon" href="../static/img/logo.jpeg" type="image/x-icon">
+
   <!-- Include AOS CSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
@@ -59,3 +61,113 @@
       class="h-9 w-9 rounded-full object-cover md:h-12 md:w-12 min-h-[36px] min-w-[36px] mr-3"/>
   </div>
   </div>
+
+  <!-- Hero Section -->
+<div class="container mt-5">
+  <div class="card p-4 text-center text-black">
+      <h1 class="entitas font-weight-bold font-bold">Entity Relationship Diagram</h1>
+      <div class="row align-items-center mt-4">
+          <div class="col-md-6">
+              <img src="../static/img/ERD_GUNUNG_BONGKOK.PNG" alt="ERD GIRI" class="img-fluid rounded mb-5">
+          </div>
+          <div class="col-md-6">
+              <h1 class="font-weight-bold text-center mb-2 font-semibold">Relasi Antar Entitas</h1>
+              <p class="text-light text-justify text-center mb-2 text-black">Pengguna ke Gunung (Many-to-Many) [Fitur Gunung Favorit]:
+                <br>Pengguna dapat menyimpan gunung favorit untuk referensi pribadi.
+                <br>Tabel Relasi: Favorit_Gunung
+                <br>id_pengguna (Integer, Foreign Key)
+                <br>id_gunung (Integer, Foreign Key)                
+              </p>
+              <p class="text-light text-justify text-center mb-2 text-black">Gunung ke Lokasi (One-to-One):
+                <br>Satu gunung hanya memiliki satu lokasi utama, misalnya titik awal pendakian atau basecamp utama.
+                <br>Foreign Key: id_lokasi di tabel Gunung sebagai Unique Key.                
+              </p>
+              <p class="text-light text-justify text-center mb-2 text-black">Gunung ke Panduan (One-to-Many):
+                <br>Satu gunung dapat memiliki banyak panduan pendakian.
+                <br>Foreign Key: id_gunung di tabel Panduan.
+              </p>
+              <p class="text-light text-justify text-center mb-2 text-black">Gunung ke Galeri (One-to-Many):
+                <br>Satu gunung dapat memiliki banyak foto dalam galeri.
+                <br>Foreign Key: id_gunung di tabel Galeri.
+              </p>
+              <p class="text-light text-justify text-center mb-2 text-black">Gunung ke Berita (One-to-Many):
+                <br>Satu gunung bisa memiliki banyak berita terkait.
+                <br>Foreign Key: id_gunung di tabel Berita.a produk.
+              </p>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- 5W 1H Section -->
+<div class="container mt-5 mb-5">
+  <div class="card p-4 text-black">
+      <h1 class="W text-center font-weight-bold font-semibold">5W 1H</h1>
+      <div class="row mt-4">
+          <div class="col-md-4 mb-4">
+              <div class="card p-3 bg-light text-dark h-100">
+                  <h5 class="text-center mb-2">What (Apa?)</h5>
+                  <p style="text-align: justify;">What (Apa):
+                    Website ini adalah platform informasi tentang Gunung Bongkok yang menyediakan data lengkap mengenai gunung, lokasi, panduan pendakian, berita terkini, dan galeri foto.</p>
+              </div>
+          </div>
+          <div class="col-md-4 mb-4">
+              <div class="card p-3 bg-light text-dark h-100">
+                  <h5 class="text-center mb-2">Who (Siapa?)</h5>
+                  <p style="text-align: justify;">Pengguna umum seperti pendaki, wisatawan, atau pencinta alam yang ingin mendapatkan informasi mengenai Gunung Bongkok.
+                    Tidak ada sistem akun, sehingga semua orang dapat mengakses informasi tanpa perlu mendaftar.</p>
+              </div>
+          </div>
+          <div class="col-md-4 mb-4">
+              <div class="card p-3 bg-light text-dark h-100">
+                  <h5 class="text-center mb-2">When (Kapan?)</h5>
+                  <p style="text-align: justify;">Pengguna dapat mengakses website kapan saja untuk melihat informasi terkini mengenai Gunung Bongkok.
+                    Berita dan informasi lainnya diperbarui oleh pengelola website sesuai dengan kondisi terbaru.</p>
+              </div>
+          </div>
+          <div class="col-md-4 mb-4">
+              <div class="card p-3 bg-light text-dark h-100">
+                  <h5 class="text-center mb-2">Where (Di mana?)</h5>
+                  <p style="text-align: justify;">Informasi tersedia secara online melalui situs web https://gunung-bongkok-1.vercel.app/.
+                    Gunung Bongkok sendiri berlokasi di Jawa Barat, Indonesia.</p>
+              </div>
+          </div>
+          <div class="col-md-4 mb-4">
+              <div class="card p-3 bg-light text-dark h-100">
+                  <h5 class="text-center mb-2">Why (Mengapa?)</h5>
+                  <p style="text-align: justify;">Website ini dibuat untuk memudahkan pendaki dan wisatawan mendapatkan informasi lengkap sebelum mendaki Gunung Bongkok.
+                    Menyediakan panduan rute, lokasi penting, serta berita terkini mengenai kondisi pendakian.</p>
+              </div>
+          </div>
+          <div class="col-md-4 mb-4">
+              <div class="card p-3 bg-light text-dark h-100 ">
+                  <h5 class="text-center mb-2">How (Bagaimana?)</h5>
+                  <p style="text-align: justify;">Pengguna cukup mengunjungi website dan memilih kategori informasi yang diinginkan, seperti lokasi, panduan, berita, atau galeri foto.
+                    Website menampilkan informasi yang sudah tersedia tanpa perlu login atau interaksi pengguna lainnya.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+  <!--footer-->
+  <footer class="footer footer-center p-3">
+    <aside>
+      <a href="{{ url_for('home') }}"><img src="../static/img/logo.jpeg" alt="Logo ASEP Industries" width="50" height="50" class="h-10 w-10 rounded-full mr-3 transform transition-all duration-300 hover:scale-110" /></a>
+      <p class="font-bold">
+        Gunung Bongkok
+      <br />
+      Keindahan Alam yang Perlu
+    </p>
+    <p>Copyright © 2025 Gunung Bongkok</p>
+    </aside>
+  </footer>
+  
+    <!-- Include AOS Initialization Script -->
+    <script>
+      AOS.init();  // Initialize AOS library for animations
+    </script>
+  
+  </body>
+  
+  </html>
